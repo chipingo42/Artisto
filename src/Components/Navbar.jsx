@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='w-screen py-4 text-white'>
+    <div className='w-screen py-4 text-white bg-[#110C00] z-40 fixed top-0 left-0'>
       <div className='flex  max-w-[1200px] mx-auto'>
         <div className='flex-1 mt-[13px]'>
           <div className='inline-flex space-x-1  items-center'>
@@ -32,7 +32,6 @@ const Navbar = () => {
               </div>
               <div className='bg-[#FBAF00] w-[164px] h-[61px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#FFFFFF] '></div>
             </div>
-            
           </div>
         </ul>
       </div>
