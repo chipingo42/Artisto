@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     extend: {
-      fontSize: {
-        sora: 'Sora',
+      fontFamily: {
+        Sora: 'Sora',
       }
     },
   },

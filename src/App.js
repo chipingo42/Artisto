@@ -1,9 +1,10 @@
+import Navbar from "./Components/Navbar";
 
 
 function App() {
   return (
-    <div className="">
-      
+    <div className=" w-full h-screen bg-[#110C00] ">
+      <Navbar />
     </div>
   );
 }
