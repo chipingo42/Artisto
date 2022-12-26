@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
+
 
 const Cardspages = () => {
   return (
     <>
-      <div className=' text-white bg-white w-full h-screen '>
+    <Navbar />
+      <div className='  bg-white w-full h-screen '>
         <h1>pages</h1>
       </div>
     </>

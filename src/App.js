@@ -1,8 +1,13 @@
-import { Route, Routes } from "react-router";
-import Arts from "./Components/Arts";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import Cardspages from "./Pages/Cardspages";
+import React from 'react'
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import Arts from './Components/Arts';
+import Cards from './Components/Cards';
+import { Route, Routes } from 'react-router-dom';
+import Cardspages from './Pages/Cardspages';
+import { Router } from 'react-router-dom';
+
+
 
 
 function App() {
@@ -11,11 +16,14 @@ function App() {
       <Navbar />
       <Hero />
       <Arts />
-      <Routes>
-        <Route path="/Cardspages" element={<Cardspages />} />
-      </Routes>
+      <Cards />
+     
+     <Routes>
+      
+     </Routes>
     </div>
-  );
+  )
 }
+
 
 export default App;

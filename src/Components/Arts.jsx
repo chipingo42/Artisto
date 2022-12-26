@@ -1,6 +1,5 @@
 import React from 'react'
 import {FiSearch} from 'react-icons/fi'
-import Cards from './Cards';
 
 const Arts = () => {
   return (
@@ -23,7 +22,6 @@ const Arts = () => {
           </div>
         </div>
       </div>
-      <Cards />
     </>
   )
 }
