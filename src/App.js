@@ -1,6 +1,8 @@
+import { Route, Routes } from "react-router";
 import Arts from "./Components/Arts";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
+import Cardspages from "./Pages/Cardspages";
 
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
       <Navbar />
       <Hero />
       <Arts />
+      <Routes>
+        <Route path="/Cardspages" element={<Cardspages />} />
+      </Routes>
     </div>
   );
 }
