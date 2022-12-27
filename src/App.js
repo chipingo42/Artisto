@@ -3,9 +3,6 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Arts from './Components/Arts';
 import Cards from './Components/Cards';
-import { Route, Routes } from 'react-router-dom';
-import Cardspages from './Pages/Cardspages';
-import { Router } from 'react-router-dom';
 
 
 
@@ -17,10 +14,6 @@ function App() {
       <Hero />
       <Arts />
       <Cards />
-     
-     <Routes>
-      
-     </Routes>
     </div>
   )
 }
