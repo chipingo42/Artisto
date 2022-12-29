@@ -12,11 +12,11 @@ const Hero = () => {
             <h1 className='font-[700] text-[68px] leading-[72px] '>Discover amazing <br /> art around the <br /> <span className='text-[#FBAF00]'>world</span> </h1>
             <p className='pt-[45px] font-Sora font-[400] text-[20px] '>Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
             <div className='flex items-center relative left-0'>
-              <div className='relative top-0 left-0 mt-[67px]'>
-                <div className='flex justify-center items-center relative z-10 bg-[#FFFFFF] w-[208px] h-[77px] rounded-tr-[30px] rounded-bl-[30px] '>
+              <div className='relative top-0 left-0 mt-[67px] group transition-all '>
+                <div className='flex justify-center items-center relative z-10 bg-[#FFFFFF] w-[208px] h-[77px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#FBAF00] '>
                   <p className=' font-Sora font-[600] text-[20px] text-[#251A00] '>Explore arts</p>
                 </div>
-                <div className='absolute left-2 top-1 bg-[#FBAF00] w-[208px] h-[77px] rounded-tr-[30px] rounded-bl-[30px]'></div>
+                <div className='absolute left-2 top-1 bg-[#FBAF00] w-[208px] h-[77px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#ffffff] '></div>
               </div>
               <div>
                 <span className='absolute top-[160px] right-4'>
