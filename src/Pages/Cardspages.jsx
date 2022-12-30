@@ -83,4 +83,4 @@ const Cardspages = () => {
   )
 }
 
-export default Cardspages
+export default Cardspages;
