@@ -58,7 +58,7 @@ const Cardspages = () => {
               <h1 className='font-Sora font-[800] text-[32px]'>Plastic Hears Sculpture</h1>
               <p className=' font-Sora font-[400] text-[20px] pt-[20px] '>Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more. Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings, upcoming <br /> and many moreBrowse a curated selection of art around the <br /> world, including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
               <div className='flex items-center space-x-10 mt-[120px]'>
-                <div className='relative top-0 left-0 group'>
+                <div className='relative z-10 top-0 left-0 group'>
                   <div className=' flex space-x-4 items-center justify-center absolute bottom-1 right-1 bg-[#ffffff] w-[200px] h-[61px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#FBAF00] transition-all '>
                     <p className=' font-Sora font-[600] text-[20px] group-hover:text-black text-black '>Explore more</p>
                     <span>
