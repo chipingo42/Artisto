@@ -28,7 +28,7 @@ const Cards = () => {
               </div>
             </div>
           </Link>
-          <Link to="Cardspages">
+          <Link to="Cardspages ">
             <div className=' w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
               <img src={face_image} alt="/" />
               <div className='px-[10px] '>
