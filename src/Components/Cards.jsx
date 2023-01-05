@@ -44,7 +44,7 @@ const Cards = () => {
               <div className='px-[10px] '>
                 <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
                 <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] leading-3 text-[20px]'>Galeri Salihara, Indonesia</p>
+                <p className='font-Sora font-[400]  text-[20px]'>Galeri Salihara, Indonesia</p>
               </div>
             </div>
           </Link>
