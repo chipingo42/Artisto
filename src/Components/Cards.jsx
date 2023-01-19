@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <>
       <div className='text-white max-w-[1200px] mx-auto'>
-        <div className=' flex flex-wrap justify-between space-y-[40px]  items-center mt-[71px]'>
+        <div className=' flex flex-wrap justify-between gap-10  items-center mt-[71px]'>
           <Link to="Cardspages">
             <div className=' w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
               <img src={face_image} alt="/" />
