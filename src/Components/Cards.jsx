@@ -32,7 +32,7 @@ const Cards = () => {
               <div key={index} className='w-[368px] h-[471px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
                 <img className='rounded-tl-[150px] w-full h-[280px]' src={`https://www.artic.edu/iiif/2/${url.image_id}/full/200,/0/default.jpg`} alt="" />
                 <div className='px-[10px] '>
-                  <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
+                  <h1 className='font-Sora font-[800] text-[24px] pt-10'>{url.title}</h1>
                   <p className='font-Sora font-[400] text-[20px] pt-3'>11- 12 November, 2021</p>
                   <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
                 </div>
