@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import face_image from '../Assets/faceimage.png'
 import avater from '../Assets/Group7-down.png'
 
 
@@ -12,14 +11,14 @@ const Cards = () => {
 
   const [myData, setData] = useState([])
 
-
-
   useEffect(() => {
     fetch("https://api.artic.edu/api/v1/artworks")
     .then(res => res.json())
     .then(data => {
+      setData(data)
       console.log(data)
     })
+    .catch(err => console.log('there was an Error!....', err))
 
   }, []);
 
@@ -27,68 +26,20 @@ const Cards = () => {
   return (
     <>
       <div className='text-white max-w-[1200px] mx-auto'>
-        <div className=' flex flex-wrap justify-between gap-10  items-center mt-[71px]'>
-          <Link to="Cardspages">
-            <div className=' w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3'>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
+        <Link to="Cardspages" className='flex flex-wrap gap-12'>
+          {
+            myData?.data?.map((url, index) => 
+              <div key={index} className='w-[368px] h-[471px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
+                <img className='rounded-tl-[150px] w-full h-[280px]' src={`https://www.artic.edu/iiif/2/${url.image_id}/full/200,/0/default.jpg`} alt="" />
+                <div className='px-[10px] '>
+                  <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
+                  <p className='font-Sora font-[400] text-[20px] pt-3'>11- 12 November, 2021</p>
+                  <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link to="Cardspages">
-            <div className=' w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
-              </div>
-            </div>
-          </Link>
-          <Link to="Cardspages ">
-            <div className=' w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
-              </div>
-            </div>
-          </Link>
-          <Link to="Cardspages">
-            <div className='w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400]  text-[20px]'>Galeri Salihara, Indonesia</p>
-              </div>
-            </div>
-          </Link>
-          <Link to="Cardspages">
-            <div className='w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
-              </div>
-            </div>
-          </Link>
-          <Link to="Cardspages">
-            <div className='w-[366px] h-[471px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-              <img src={face_image} alt="/" />
-              <div className='px-[10px] '>
-                <h1 className='font-Sora font-[800] text-[24px] pt-10'>Plastic Hears Sculpture</h1>
-                <p className='font-Sora font-[400] text-[20px] pt-3 '>11- 12 November, 2021</p>
-                <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
-              </div>
-            </div>
-          </Link>
-        </div>
+            )
+          }
+        </Link>
         <div className='flex items-center justify-center mt-[130px]'>
           <div className='relative top-0 left-0 group'>
             <div className='flex space-x-4 items-center justify-center absolute bottom-1 right-1 bg-[#ffffff] w-[230px] h-[61px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#FBAF00] transition-all '>
