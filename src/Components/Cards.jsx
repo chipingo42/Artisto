@@ -1,9 +1,29 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import face_image from '../Assets/faceimage.png'
 import avater from '../Assets/Group7-down.png'
 
+
+
+
+
+
 const Cards = () => {
+
+  const [myData, setData] = useState([])
+
+
+
+  useEffect(() => {
+    fetch("https://api.artic.edu/api/v1/artworks")
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
+
+  }, []);
+
+  
   return (
     <>
       <div className='text-white max-w-[1200px] mx-auto'>
