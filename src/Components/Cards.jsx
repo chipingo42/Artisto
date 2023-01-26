@@ -4,9 +4,6 @@ import avater from '../Assets/Group7-down.png'
 
 
 
-
-
-
 const Cards = () => {
 
   const [myData, setData] = useState([])
@@ -18,23 +15,22 @@ const Cards = () => {
       setData(data)
       console.log(data)
     })
-    .catch(err => console.log('there was an Error!....', err))
+    .catch(err => err.message)
   }, []);
 
 
-  
   return (
     <>
       <div className='text-white max-w-[1200px] mx-auto'>
-        <Link to="Cardspages" className='flex flex-wrap gap-12'>
+        <Link to="Cardspages" className='flex flex-wrap gap-7'>
           {
             myData?.data?.map((url, index) => (
-              <div key={index} className='w-[368px] h-[471px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[200px]'>
-                <img className='rounded-tl-[150px] w-full h-[280px]' src={`https://www.artic.edu/iiif/2/${url.image_id}/full/200,/0/default.jpg`} alt="" />
-                <div className='px-[10px]'>
+              <div key={index} className='w-[381px] min-h-[20px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[180px]'>
+                <img className='rounded-tl-[150px] w-full h-[326px]' src={`https://www.artic.edu/iiif/2/${url.image_id}/full/200,/0/default.jpg`} alt="" />
+                <div className='px-[10px] w-[320px] '>
                   <h1 className='font-Sora font-[800] text-[24px] pt-10'>{url.title}</h1>
                   <p className='font-Sora font-[400] text-[20px] pt-3'>{url.updated_at}</p>
-                  <p className='font-Sora font-[400] text-[20px]'>Galeri Salihara, Indonesia</p>
+                  <p className='font-Sora font-[400] text-[20px] pb-4 '>{url.artist_display}</p>
                 </div>
               </div>
             ))
