@@ -72,7 +72,7 @@ const Detailspage = () => {
           </div>
           <div className='flex justify-center gap-14 mt-[40px] '>
             <div>
-              <img src={`https://www.artic.edu/iiif/2/${myData.image_id}/full/200,/0/default.jpg`} alt="/" className='h-[617px] w-[465px] rounded-tl-[200px] rounded-br-[200px] rounded-tr-[20px] rounded-bl-[20px]' />
+              <img src={`https://www.artic.edu/iiif/2/${myData.image_id}/full/200,/0/default.jpg`} alt="/" className='h-[517px] w-[445px] rounded-tl-[200px] rounded-br-[200px] rounded-tr-[20px] rounded-bl-[20px]' />
             </div>
             <div className='w-[626px]'>
               <h1 className='font-Sora font-[800] text-[32px]'>{myData.title}</h1>
