@@ -5,7 +5,7 @@ import Cards from '../Components/Cards'
 const Arts = () => {
   return (
     <>
-      <div className='text-[#fff] max-w-[1200px] mx-auto pt-[230px]'>
+      <div className='text-[#fff] max-w-[1200px] mx-auto pt-[30px]'>
         <div className='flex justify-between'>
           <div>
             <h1 className=' font-Sora font-[700] text-[48px] '>Art in the collection</h1>

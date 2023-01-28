@@ -7,7 +7,7 @@ import Arts from './Components/Arts';
 
 function App() {
   return (
-    <div className=" w-full h-full bg-[#110C00] ">
+    <div className=" w-full min-h-screen bg-[#110C00] ">
       <Navbar />
       <Hero />
       <Arts />

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Cardspages from './Pages/Cardspages';
+import Cardspages from './Pages/Detailspage';
 
 
 import {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "Cardspages",
+    path: "Detailspage/:artId",
     element: <Cardspages />,
   },
 ]);

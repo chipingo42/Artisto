@@ -13,29 +13,30 @@ const Cards = () => {
     .then(res => res.json())
     .then(data => {
       setData(data)
-      console.log(data)
+      // console.log(data)
     })
     .catch(err => err.message)
   }, []);
 
 
+
   return (
     <>
       <div className='text-white max-w-[1200px] mx-auto'>
-        <Link to="Cardspages" className='flex flex-wrap gap-7'>
+        <div className='flex flex-wrap gap-7'>
           {
-            myData?.data?.map((url, index) => (
-              <div key={index} className='w-[381px] min-h-[20px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[180px]'>
-                <img className='rounded-tl-[150px] w-full h-[326px]' src={`https://www.artic.edu/iiif/2/${url.image_id}/full/200,/0/default.jpg`} alt="" />
+            myData?.data?.map((data_user, index) => (
+              <Link to={`Detailspage/${data_user.id}`} key={index} className='w-[381px] min-h-[20px] mt-[56px] bg-[#1A1405] rounded-tl-[150px] rounded-br-[180px]'>
+                <img className='rounded-tl-[150px] w-full h-[326px]' src={`https://www.artic.edu/iiif/2/${data_user.image_id}/full/200,/0/default.jpg`} alt="" />
                 <div className='px-[10px] w-[320px] '>
-                  <h1 className='font-Sora font-[800] text-[24px] pt-10'>{url.title}</h1>
-                  <p className='font-Sora font-[400] text-[20px] pt-3'>{url.updated_at}</p>
-                  <p className='font-Sora font-[400] text-[20px] pb-4 '>{url.artist_display}</p>
+                  <h1 className='font-Sora font-[800] text-[24px] pt-10'>{data_user.title}</h1>
+                  <p className='font-Sora font-[400] text-[20px] pt-3'>{data_user.updated_at}</p>
+                  <p className='font-Sora font-[400] text-[18px] pb-4 '>{data_user.artist_display}</p>
                 </div>
-              </div>
+              </Link>
             ))
           }
-        </Link>
+        </div>
         <div className='flex items-center justify-center mt-[130px]'>
           <div className='relative top-0 left-0 group'>
             <div className='flex space-x-4 items-center justify-center absolute bottom-1 right-1 bg-[#ffffff] w-[230px] h-[61px] rounded-tr-[30px] rounded-bl-[30px] group-hover:bg-[#FBAF00] transition-all '>

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <div className='text-[#fff] max-w-[1200px] mx-auto'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between pb-[179px]'>
           <div className='pt-[213px] '>
             <h1 className='font-[700] text-[68px] leading-[72px] '>Discover amazing <br /> art around the <br /> <span className='text-[#FBAF00]'>world</span> </h1>
             <p className='pt-[45px] font-Sora font-[400] text-[20px] '>Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
@@ -27,7 +27,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className='mt-[244px]'>
+          <div className='mt-[213px]'>
             <img className=' absolute top-[300px] right-0 z-[1] h-[610px] ' src={avater} alt="/" />
             <div className='relative top-7 left-0'>
               <div  className='relative bg-[#FBAF00] rounded-tr-[200px] rounded-bl-[200px] rounded-tl-[20px] rounded-br-[20px] w-[448px] h-[566px] z-[2]  '></div>
